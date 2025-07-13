@@ -37,6 +37,7 @@
       <h2>Ken Stevens X-ray Film</h2>
       <video width="480" controls>
         <source src="ken-stevens-xray.webm" type="video/webm">
+        <source src="ken-stevens-xray.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <p style="font-size:0.95em; color:#555;">This is an x-ray video that was taken of Ken Stevens. Watch through it once, paying attention to the consonants he produces, and where the tongue goes for those articulations. On your second watch through, pay attention to the vowels, see how some of the vowels are higher or lower than others? You might even want to watch again to notice the velum (at the back of the mouth, above the throat), which is lowered whenever he breathes, but raises whenever he is speaking a non-nasal segment. This video serves as an excellent reminder of how complex speech production really is, even though we often don't give the actual articulation much thought.</p>
@@ -101,7 +102,7 @@
       const resultDiv = document.getElementById('ipa-result');
       resultDiv.textContent = 'Loading...';
       try {
-        const resp = await fetch('http://127.0.0.1:5000/ipa', {
+        const resp = await fetch('/ipa/api/ipa', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ text: input })
