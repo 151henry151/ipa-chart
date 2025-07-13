@@ -1,0 +1,82 @@
+<HTML>  
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Mac">
+  <TITLE>clicks</TITLE>
+  <link href="general.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><style type="text/css">
+<!--
+a:link {
+	color: 009999;
+}
+a:visited {
+	color: 009999;
+}
+a:active {
+	color: 009999;
+}
+-->
+</style>
+<script>
+function playAudio(soundFile) {
+    var audio = new Audio(soundFile);
+    audio.play();
+    return false; // Prevent default link behavior
+}
+
+// Add event listeners to prevent default behavior
+document.addEventListener('DOMContentLoaded', function() {
+    var areas = document.querySelectorAll('area[href*="javascript:playAudio"]');
+    areas.forEach(function(area) {
+        area.addEventListener('click', function(e) {
+            e.preventDefault();
+            var href = this.getAttribute('href');
+            // Extract the sound file path from javascript:playAudio('path')
+            var match = href.match(/javascript:playAudio\('([^']+)'\)/);
+            if (match) {
+                var soundFile = match[1];
+                playAudio(soundFile);
+            }
+        });
+    });
+});
+</script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<P align="center"><img src="course.gif" width="488" height="60"></P>
+<P><A HREF="ucla_ipa.html">Return to the IPA chart</A></P>
+<P align="center" class="header1"><B>Clicks</B>
+<P><span class="header3"><B>Click on symbol to hear the sound.
+      <MAP
+NAME="clicksMap1">
+        <area shape="rect" coords="402,221,418,243" href="ipaSOUNDS/con-71a.wav">
+        <AREA SHAPE="rect" COORDS="422,223,440,256" HREF="javascript:playAudio('ipaSOUNDS/con-71b.wav')">
+        <AREA SHAPE="rect" COORDS="26,119,48,150" HREF="javascript:playAudio('ipaSOUNDS/Con-59b.wav')">
+        <AREA SHAPE="rect" COORDS="417,193,441,216" HREF="javascript:playAudio('ipaSOUNDS/Con-70b.wav')">
+        <AREA SHAPE="rect" COORDS="416,162,438,185" HREF="javascript:playAudio('ipaSOUNDS/Con-69b.wav')">
+        <AREA SHAPE="rect" COORDS="410,191,420,217" HREF="javascript:playAudio('ipaSOUNDS/Con-70a.wav')">
+        <AREA SHAPE="rect" COORDS="409,161,417,185" HREF="javascript:playAudio('ipaSOUNDS/Con-69a.wav')">
+        <AREA SHAPE="rect" COORDS="420,123,438,149" HREF="javascript:playAudio('ipaSOUNDS/Con-68b.wav')">
+        <AREA SHAPE="rect" COORDS="409,121,420,149" HREF="javascript:playAudio('ipaSOUNDS/Con-68a.wav')">
+        <AREA SHAPE="rect" COORDS="217,225,233,252" HREF="javascript:playAudio('ipaSOUNDS/Con-67b.wav')">
+        <AREA SHAPE="rect" COORDS="206,222,217,248" HREF="javascript:playAudio('ipaSOUNDS/Con-67a.wav')">
+        <AREA SHAPE="rect" COORDS="216,188,238,217" HREF="javascript:playAudio('ipaSOUNDS/Con-66b.wav')">
+        <AREA SHAPE="rect" COORDS="200,188,216,217" HREF="javascript:playAudio('ipaSOUNDS/Con-66a.wav')">
+        <AREA SHAPE="rect" COORDS="217,159,232,186" HREF="javascript:playAudio('ipaSOUNDS/Con-65b.wav')">
+        <AREA SHAPE="rect" COORDS="204,158,217,185" HREF="javascript:playAudio('ipaSOUNDS/Con-65a.wav')">
+        <AREA SHAPE="rect" COORDS="220,121,241,154" HREF="javascript:playAudio('ipaSOUNDS/Con-64b.wav')">
+        <AREA SHAPE="rect" COORDS="204,118,219,153" HREF="javascript:playAudio('ipaSOUNDS/Con-64a.wav')">
+        <AREA SHAPE="rect" COORDS="223,75,237,117" HREF="javascript:playAudio('ipaSOUNDS/Con-63b.wav')">
+        <AREA SHAPE="rect" COORDS="209,74,222,111" HREF="javascript:playAudio('ipaSOUNDS/Con-63a.wav')">
+        <AREA SHAPE="rect" COORDS="26,223,38,249" HREF="javascript:playAudio('ipaSOUNDS/Con-62b.wav')">
+        <AREA SHAPE="rect" COORDS="15,221,25,249" HREF="javascript:playAudio('ipaSOUNDS/Con-62a.wav')">
+        <AREA SHAPE="rect" COORDS="29,191,45,218" HREF="javascript:playAudio('ipaSOUNDS/Con-61b.wav')">
+        <AREA SHAPE="rect" COORDS="11,193,27,218" HREF="javascript:playAudio('ipaSOUNDS/Con-61a.wav')">
+        <AREA SHAPE="rect" COORDS="25,159,46,188" HREF="javascript:playAudio('ipaSOUNDS/Con-60b.wav')">
+        <AREA SHAPE="rect" COORDS="13,157,26,185" HREF="javascript:playAudio('ipaSOUNDS/Con-60a.wav')">
+        <AREA SHAPE="rect" COORDS="8,118,27,151" HREF="javascript:playAudio('ipaSOUNDS/Con-59a.wav')">
+        <AREA SHAPE="rect" COORDS="26,76,45,109" HREF="javascript:playAudio('ipaSOUNDS/Con-58b.wav')">
+        <AREA SHAPE="rect" COORDS="11,74,26,108" HREF="javascript:playAudio('ipaSOUNDS/Con-58a.wav')">
+      </MAP>
+      </B></span><B><IMG SRC="clicks.gif" WIDTH="647" HEIGHT="255" ALIGN="BOTTOM" USEMAP="#clicksMap1" ISMAP class="border" NATURALSIZEFLAG="1"></B>
+</BODY>
+</HTML>

@@ -1,0 +1,88 @@
+<HTML>  
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Mac">
+  <TITLE>other symbols</TITLE>
+  <link href="general.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><style type="text/css">
+<!--
+a:link {
+	color: 009999;
+}
+a:visited {
+	color: 009999;
+}
+a:active {
+	color: 009999;
+}
+-->
+</style>
+<script>
+function playAudio(soundFile) {
+    var audio = new Audio(soundFile);
+    audio.play();
+    return false; // Prevent default link behavior
+}
+
+// Add event listeners to prevent default behavior
+document.addEventListener('DOMContentLoaded', function() {
+    var areas = document.querySelectorAll('area[href*="javascript:playAudio"]');
+    areas.forEach(function(area) {
+        area.addEventListener('click', function(e) {
+            e.preventDefault();
+            var href = this.getAttribute('href');
+            // Extract the sound file path from javascript:playAudio('path')
+            var match = href.match(/javascript:playAudio\('([^']+)'\)/);
+            if (match) {
+                var soundFile = match[1];
+                playAudio(soundFile);
+            }
+        });
+    });
+});
+</script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<P align="center"><img src="course.gif" width="488" height="60"></P>
+<P><A HREF="ucla_ipa.html">The IPA chart</A></P>
+<P>&nbsp;</P>
+<P>
+  <CENTER>
+    <p class="header1"><B>Other symbols </B></p>
+    <p class="header3"><B>To hear the sounds click on the symbol.</B>
+        </p>
+  </CENTER>
+</P>
+<P>
+  <CENTER>
+    <A HREF="chapter1.html">
+    <MAP NAME="othersMap1">
+      <AREA SHAPE="rect" COORDS="189,159,209,181" HREF="javascript:playAudio('ipaSOUNDS/Con-82b.wav')">
+      <AREA SHAPE="rect" COORDS="198,8,203,22" HREF="javascript:playAudio('ipaSOUNDS/Con-78b.wav')">
+      <AREA SHAPE="rect" COORDS="187,7,197,20" HREF="javascript:playAudio('ipaSOUNDS/Con-78a.wav')">
+      <AREA SHAPE="rect" COORDS="217,8,234,26" HREF="javascript:playAudio('ipaSOUNDS/Con-79b.wav')">
+      <AREA SHAPE="rect" COORDS="207,7,215,24" HREF="javascript:playAudio('ipaSOUNDS/Con-79a.wav')">
+      <AREA SHAPE="rect" COORDS="198,69,209,90" HREF="javascript:playAudio('ipaSOUNDS/Con-81b.wav')">
+      <AREA SHAPE="rect" COORDS="2,109,13,126" HREF="javascript:playAudio('ipaSOUNDS/Con-75a.wav')">
+      <AREA SHAPE="rect" COORDS="189,68,196,90" HREF="javascript:playAudio('ipaSOUNDS/Con-81a.wav')">
+      <AREA SHAPE="rect" COORDS="16,108,29,125" HREF="javascript:playAudio('ipaSOUNDS/Con-75b.wav')">
+      <AREA SHAPE="rect" COORDS="274,157,299,180" HREF="javascript:playAudio('ipaSOUNDS/Con-82b.wav')">
+      <AREA SHAPE="rect" COORDS="272,157,287,181" HREF="javascript:playAudio('ipaSOUNDS/Con-82a.wav')">
+      <AREA SHAPE="rect" COORDS="199,32,209,52" HREF="javascript:playAudio('ipaSOUNDS/Con-80b.wav')">
+      <AREA SHAPE="rect" COORDS="189,30,197,56" HREF="javascript:playAudio('ipaSOUNDS/Con-80a.wav')">
+      <AREA SHAPE="rect" COORDS="17,159,26,174" HREF="javascript:playAudio('ipaSOUNDS/Con-77b.wav')">
+      <AREA SHAPE="rect" COORDS="7,159,13,176" HREF="javascript:playAudio('ipaSOUNDS/Con-77a.wav')">
+      <AREA SHAPE="rect" COORDS="13,133,27,153" HREF="javascript:playAudio('ipaSOUNDS/Con-76b.wav')">
+      <AREA SHAPE="rect" COORDS="6,130,15,152" HREF="javascript:playAudio('ipaSOUNDS/Con-76a.wav')">
+      <AREA SHAPE="rect" COORDS="21,71,36,90" HREF="javascript:playAudio('ipaSOUNDS/Con-74b.wav')">
+      <AREA SHAPE="rect" COORDS="5,71,14,92" HREF="javascript:playAudio('ipaSOUNDS/Con-74a.wav')">
+      <AREA SHAPE="rect" COORDS="17,35,32,51" HREF="javascript:playAudio('ipaSOUNDS/Con-73b.wav')">
+      <AREA SHAPE="rect" COORDS="6,33,16,52" HREF="javascript:playAudio('ipaSOUNDS/Con-73a.wav')">
+      <AREA SHAPE="rect" COORDS="18,7,30,25" HREF="javascript:playAudio('ipaSOUNDS/Con-72b.wav')">
+      <AREA SHAPE="rect" COORDS="7,8,17,24" HREF="javascript:playAudio('ipaSOUNDS/Con-72a.wav')">
+    </MAP>
+    <IMG SRC="others.gif" WIDTH="375" HEIGHT="187" ALIGN="BOTTOM" USEMAP="#othersMap1" ISMAP class="border" NATURALSIZEFLAG="3"></A>
+  </CENTER>
+</P>
+<P>
+</BODY>
+</HTML>
