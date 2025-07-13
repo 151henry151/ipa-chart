@@ -1,0 +1,39 @@
+.general {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #000;
+}
+.header1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000;
+}
+.header2 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	color: #000;
+}
+.border {
+	border: 1px solid #000000;
+	
+}
+.header3 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #000;
+	font-style: normal;
+}
+.general1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #000;
+}
+.newheader3 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000;
+}
